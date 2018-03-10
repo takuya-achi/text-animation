@@ -3,7 +3,8 @@ html(lang="jp")
   head
     title="アニメーション貯蓄"
     link(rel="stylesheet", href="css/style.css")
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Oswald")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
 
   body
@@ -38,9 +39,31 @@ html(lang="jp")
             p.fadeup 
               span.fadeup-wrapper
                 span.letters 見出し等文字数が少ない時に活用できます。
-                span.letters 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    .section-3
+      .container
+        .title
+          span TEXT-ANIME03
+          br
+          h2.sideshow
+            span.sideshow-wrapper
+              span.letter SIDE
+              span.letter SHOW
+          .tag
+            span Anime.js
+            
+        .text
+          p.sideshow
+            span.sideshow-wrapper
+              span.letter 一文字ずつではなく、単語ごとに横からふわっと表示します。
+                br 
+                | 少し上品な感じでしょうか。
+          p.fadeup 
+            span.sideshow-wrapper
+
+          
+
+  script(script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
   script(src="js/anime.min.js")
   script(src='js/main.js')
 
