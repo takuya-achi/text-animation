@@ -1,0 +1,37 @@
+doctype html
+html(lang="jp")
+  head
+    title="アニメーション貯蓄"
+    link(rel="stylesheet", href="css/style.css")
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+
+  body
+    .section-1
+      .container
+        .title
+          span.overlay TEXT-ANIME01
+          br
+          h2.overlay MASKING
+        .text
+          p.overlay.overlay--late 左から右、上から下等、出現した箇所から反対の方向にボックスが流れていくようなアニメーション。
+          p.overlay.overlay--late 読む方向に向かってアニメーションするので、文章を読んでもらえる確立があがる...かもしれません。
+
+    .section-2
+        .container
+          .title
+            span TEXT-ANIME02
+            br
+            h2.fadeup 
+              span.fadeup-wrapper
+                span.letters FADEUP
+              
+          .text
+            p 左から右、上から下等、出現した箇所から反対の方向にボックスが流れていくようなアニメーション。
+            p 読む方向に向かってアニメーションするので、文章を読んでもらえる確立があがる...かもしれません。
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  script(src="js/anime.min.js")
+  script(src='js/main.js')
+
+      

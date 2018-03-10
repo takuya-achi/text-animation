@@ -1,0 +1,60 @@
+.overlay{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    color: white;
+    &::after{
+        background:red;
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        transform: translate(0, 0);
+        animation-name: masking;
+        animation-duration: 2000ms;
+        animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        width: 0px;
+    }
+}
+
+.overlay--late{
+    &::after{
+        animation-delay: .3s;
+    }
+}
+
+.fadeup{
+    position: relative;
+    .fadeup-wrapper{
+        position: relative;
+        display: inline-block;
+        padding-top: 0.2em;
+        padding-right: 0.05em;
+        padding-bottom: 0.1em;
+        overflow: hidden;
+    }
+     .letter{
+        transform-origin: 0 100%;
+        display: inline-block;
+        line-height: 1em;
+     }
+
+}
+
+@keyframes masking {
+    20% {
+        width: 0;
+        left: 0;
+        right: auto;
+    }
+    40%, 60%{
+        width: 100%;
+        top: 0;
+    }
+    80% {
+        width: 0px;
+        right: 0%;
+        left: auto;
+    }
+  }

@@ -1,0 +1,36 @@
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+h2{
+    font-size: 50px !important;
+}
+
+p{
+    letter-spacing: 2px;
+    line-height: 1.75 !important;
+    margin: 0;
+}
+
+
+.section-1,.section-2{
+    width: 100%;
+    padding: 100px 0;
+    background-color:#111;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    .title{
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+    span{
+        padding-bottom: 20px;
+    }
+    p{
+        margin-left: 100px;
+    }
+}
+
+@import "animation";
