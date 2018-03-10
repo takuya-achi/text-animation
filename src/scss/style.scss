@@ -33,4 +33,13 @@ p{
     }
 }
 
+.tag{
+    margin-top: 20px;
+    & span{
+        padding: 2px 20px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+    }
+}
+
 @import "animation";

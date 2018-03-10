@@ -13,6 +13,8 @@ html(lang="jp")
           span.overlay TEXT-ANIME01
           br
           h2.overlay MASKING
+          .tag
+            span CSS
         .text
           p.overlay.overlay--late 左から右、上から下等、出現した箇所から反対の方向にボックスが流れていくようなアニメーション。
           p.overlay.overlay--late 読む方向に向かってアニメーションするので、文章を読んでもらえる確立があがる...かもしれません。
@@ -25,10 +27,18 @@ html(lang="jp")
             h2.fadeup 
               span.fadeup-wrapper
                 span.letters FADEUP
+            .tag
+              span jQuery
+              span Anime.js
               
           .text
-            p 左から右、上から下等、出現した箇所から反対の方向にボックスが流れていくようなアニメーション。
-            p 読む方向に向かってアニメーションするので、文章を読んでもらえる確立があがる...かもしれません。
+            p.fadeup 
+              span.fadeup-wrapper
+                span.letters 一文字ずつ下から文字が出てきます。一文字ずつspanで囲っていてるのでマークアップ的に良くはありません。
+            p.fadeup 
+              span.fadeup-wrapper
+                span.letters 見出し等文字数が少ない時に活用できます。
+                span.letters 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   script(src="js/anime.min.js")
