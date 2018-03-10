@@ -27,7 +27,7 @@
 
 
     
-  anime.sideshow()
+  anime.timeline()
 
      .add({
         targets: '.sideshow .sideshow-wrapper .letter',
